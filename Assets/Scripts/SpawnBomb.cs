@@ -23,11 +23,8 @@ public class SpawnBomb : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.DrawRay(bombPref.transform.position, transform.forward * 1000, Color.green);
-
         if(Input.GetMouseButtonUp(1))
         {
-            //Debug.Log(GameController.bombQuant);
             if(canSpawn)
             {
                 if(GameController.bombQuant >= 1)

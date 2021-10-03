@@ -1,40 +1,151 @@
 Using pre-set license
 Built from '2021.1/staging' branch; Version is '2021.1.7f1 (d91830b65d9b) revision 14227504'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 10240.17443; Version ; 64bit' Language: 'pt' Physical Memory: 3984 MB
+OS: 'Windows 10 Home Single Language; OS build 19042.685; Version 2009; 64bit' Language: 'pt' Physical Memory: 7915 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2021.1.7f1\Editor\Unity.exe
+C:\Users\gabri\Desktop\2021.1.7f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/Gabriel/Desktop/Git/Bomberman
+C:/Users/gabri/Documents/GitHub/Bomberman
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64803
-Successfully changed project path to: C:/Users/Gabriel/Desktop/Git/Bomberman
-C:/Users/Gabriel/Desktop/Git/Bomberman
+56724
+Successfully changed project path to: C:/Users/gabri/Documents/GitHub/Bomberman
+C:/Users/gabri/Documents/GitHub/Bomberman
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 1430.64 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 260.57 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.7f1 (d91830b65d9b)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Gabriel/Desktop/Git/Bomberman/Assets
+[Subsystems] Discovering subsystems at path C:/Users/gabri/Desktop/2021.1.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/gabri/Documents/GitHub/Bomberman/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
-d3d11: QueryInterface(IDXGIFactory5) failed (80004002).
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
+    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x9a49)
     Vendor:   Intel
-    VRAM:     1992 MB
-    Driver:   20.19.15.4531
+    VRAM:     3957 MB
+    Driver:   27.20.100.9030
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56132
+Mono path[0] = 'C:/Users/gabri/Desktop/2021.1.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Users/gabri/Desktop/2021.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Users/gabri/Desktop/2021.1.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56704
 Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Users/gabri/Desktop/2021.1.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007077 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 255.70 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  6.013 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.009067 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\gabri\Documents\GitHub\Bomberman\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\gabri\Documents\GitHub\Bomberman\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.76 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.084 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
+Refreshing native plugins compatible for Editor in 1.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2670 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.9 MB.
+System memory in use after: 104.0 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3135.
+Total: 9.239700 ms (FindLiveObjects: 0.591400 ms CreateObjectMapping: 0.461700 ms MarkObjects: 7.886000 ms  DeleteObjects: 0.297000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scripts/EnemyAi.cs
+  artifactKey: Guid(9836684d31657f04cbdf497d1b0dfc87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/EnemyAi.cs using Guid(9836684d31657f04cbdf497d1b0dfc87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0024c486549d00fb4a63c0fafaf1f28a') in 0.073406 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008996 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\gabri\Documents\GitHub\Bomberman\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\gabri\Documents\GitHub\Bomberman\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.60 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.942 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.11 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2665 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.8 MB.
+System memory in use after: 104.0 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3138.
+Total: 6.137900 ms (FindLiveObjects: 0.333900 ms CreateObjectMapping: 0.404000 ms MarkObjects: 5.083600 ms  DeleteObjects: 0.313400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 586.128827 seconds.
+  path: Assets/Scripts/EnemyAi.cs
+  artifactKey: Guid(9836684d31657f04cbdf497d1b0dfc87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/EnemyAi.cs using Guid(9836684d31657f04cbdf497d1b0dfc87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '899fa90cd4ccaa298269be737326dc0c') in 0.014216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000726 seconds.
+  path: Assets/Scripts/GameController.cs
+  artifactKey: Guid(e4df1574cd329ff4498a001dc26c3293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameController.cs using Guid(e4df1574cd329ff4498a001dc26c3293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b441145c6011b225c2320e3e29363e22') in 0.021040 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.765361 seconds.
+  path: Assets/Scripts/PlayerScript.cs
+  artifactKey: Guid(02b62e240b3f613448d22a3785a0f7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerScript.cs using Guid(02b62e240b3f613448d22a3785a0f7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab7de8118d3f3e55ff50c78791637e88') in 0.028987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 51.885675 seconds.
+  path: Assets/Scripts/SpawnBomb.cs
+  artifactKey: Guid(69779f923efce2f428d2d356ac624522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpawnBomb.cs using Guid(69779f923efce2f428d2d356ac624522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27649582238b87abbea5fc2e245610d7') in 0.028607 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006815 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\gabri\Documents\GitHub\Bomberman\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\gabri\Documents\GitHub\Bomberman\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.17 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.742 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.03 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2665 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.9 MB.
+System memory in use after: 104.1 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3141.
+Total: 4.453900 ms (FindLiveObjects: 0.381500 ms CreateObjectMapping: 0.190800 ms MarkObjects: 3.781300 ms  DeleteObjects: 0.098100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 44.820028 seconds.
+  path: Assets/Scripts/SpawnBomb.cs
+  artifactKey: Guid(69779f923efce2f428d2d356ac624522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpawnBomb.cs using Guid(69779f923efce2f428d2d356ac624522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55088055590b1fe86f2f184260e136fb') in 0.017668 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

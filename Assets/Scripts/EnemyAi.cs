@@ -15,10 +15,10 @@ public class EnemyAi : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        navMesh = GetComponent<UnityEngine.AI.NavMeshAgent>();
-        player = GameObject.Find("/Player");
+        navMesh = GetComponent<UnityEngine.AI.NavMeshAgent>();    //Getting Nav from enemy
+        player = GameObject.Find("/Player");                      //Getting player GmObj
         
-        disSave = dis;
+        disSave = dis;                                            //Saving distance limit
     }
 
     // Update is called once per frame
@@ -29,19 +29,19 @@ public class EnemyAi : MonoBehaviour
 
         Debug.Log(Mathf.Abs(Mathf.Abs(playerT.x + playerT.z) - Mathf.Abs(enemyT.x + enemyT.z)));
 
-        if(Mathf.Abs(Mathf.Abs(playerT.x + playerT.z) - Mathf.Abs(enemyT.x + enemyT.z)) <= dis)
+        if(Mathf.Abs(Mathf.Abs(playerT.x + playerT.z) - Mathf.Abs(enemyT.x + enemyT.z)) <= dis)        // If distance beetwen player and enemy <= to distance limit
         {
-            navMesh.isStopped = false;
-            navMesh.SetDestination(playerT);
+            navMesh.isStopped = false;                         // Making enemy go after player
+            navMesh.SetDestination(playerT);                   // Set enemy destination
         }
         else
         {
-            navMesh.isStopped = true;
+            navMesh.isStopped = true;                           // Making enemy stop going after player
         }
     }
     void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
+        if(other.tag == "Player")                         // If enemy hit with player, will make enemy stop follow and will destroy player
         {
             dis = -999;
             navMesh.isStopped = true;
