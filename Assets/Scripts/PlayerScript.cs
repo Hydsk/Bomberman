@@ -23,7 +23,7 @@ public class PlayerScript : MonoBehaviour
 
         // If player press "AWSD", will make player move 
 
-        if(Input.GetKey(KeyCode.D))
+        if(Input.GetKey(KeyCode.D))                                                                         
         {
             if(CanMove)
             {

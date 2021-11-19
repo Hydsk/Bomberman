@@ -27,7 +27,7 @@ public class SpawnBomb : MonoBehaviour
         {
             if(canSpawn)
             {
-                if(GameController.bombQuant >= 1)
+                if(GameController.bombQuant >= 1)                     // Spawn bomb when left clicked
                 {
                     if(cooldown)
                     {
@@ -44,13 +44,13 @@ public class SpawnBomb : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
+        if(other.tag == "Player")       // Make player able to spawn if he is colliding with this tile
         {
             canSpawn = true;
             isPlayerInside = true;
         }
     }
-    void OnTriggerExit(Collider other)
+    void OnTriggerExit(Collider other)      // Unable to spawn if player out of this tile
     {
         if(other.tag == "Player")
         {
@@ -62,7 +62,7 @@ public class SpawnBomb : MonoBehaviour
     IEnumerator waitForSpawn()
     {
         cooldown = false;
-        yield return new WaitForSeconds(3.0f);
+        yield return new WaitForSeconds(3.0f);            // Will make unable to spawn another bomb if there is another one
         GameController.bombQuant+=1;
         cooldown = true;
         yield return new WaitForSeconds(1.0f);
@@ -71,8 +71,8 @@ public class SpawnBomb : MonoBehaviour
     }
     public void Explosion()
     {
-        Vector3 fixRay = new Vector3(bombPref.transform.position.x, bombPref.transform.position.y + 0.5f, bombPref.transform.position.z);
-        RaycastHit hit;
+        Vector3 fixRay = new Vector3(bombPref.transform.position.x, bombPref.transform.position.y + 0.5f, bombPref.transform.position.z);       // Creates a raycast
+        RaycastHit hit;                                                                                                                         // creates a line
         if(Physics.Raycast(fixRay, transform.forward, out hit, 3) && hit.transform.gameObject.tag == "Finish" ||
          Physics.Raycast(fixRay, transform.forward, out hit, 3.5f) && hit.transform.gameObject.tag == "Enemy" ||
          Physics.Raycast(fixRay, transform.forward, out hit, 3.5f) && hit.transform.gameObject.tag == "Player")
@@ -302,14 +302,14 @@ public class SpawnBomb : MonoBehaviour
         //Destroy(bombPref);
     }
 
-    IEnumerator waitToCall()
+    IEnumerator waitToCall()                                            // Will repeat explosion process
     {
         yield return new WaitForSeconds(0.2f);
         canCall = true;
         Explosion();
     }
 
-    IEnumerator waitToDespawn()
+    IEnumerator waitToDespawn()                           // will destroy bomb
     {
         Debug.Log("Tentando destruir");
 
